@@ -1,0 +1,9 @@
+-rootPath
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/gui
+-cmake-output
+-output-file
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/.qt/qml_imports/NeedSpeedRead_conf.cmake
+-importPath
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui
+-importPath
+C:/Qt/6.10.2/mingw_64/qml

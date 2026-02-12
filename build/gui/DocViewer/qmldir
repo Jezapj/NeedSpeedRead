@@ -1,0 +1,6 @@
+module DocViewer
+typeinfo NeedSpeedRead.qmltypes
+prefer :/DocViewer/
+Main 1.0 qml/Main.qml
+depends QtQuick
+

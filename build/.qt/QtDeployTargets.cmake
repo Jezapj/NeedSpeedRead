@@ -1,0 +1,7 @@
+set(__QT_DEPLOY_TARGET_core_FILE C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/core/libcore.a)
+set(__QT_DEPLOY_TARGET_core_TYPE STATIC_LIBRARY)
+set(__QT_DEPLOY_TARGET_backend_FILE C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/backend/libbackend.a)
+set(__QT_DEPLOY_TARGET_backend_TYPE STATIC_LIBRARY)
+set(__QT_DEPLOY_TARGET_NeedSpeedRead_FILE C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/NeedSpeedRead.exe)
+set(__QT_DEPLOY_TARGET_NeedSpeedRead_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_NeedSpeedRead_RUNTIME_DLLS C:/Qt/6.10.2/mingw_64/bin/Qt6Quick.dll;C:/Qt/6.10.2/mingw_64/bin/Qt6Widgets.dll;C:/Qt/6.10.2/mingw_64/bin/Qt6OpenGL.dll;C:/Qt/6.10.2/mingw_64/bin/Qt6QmlMeta.dll;C:/Qt/6.10.2/mingw_64/bin/Qt6QmlModels.dll;C:/Qt/6.10.2/mingw_64/bin/Qt6QmlWorkerScript.dll;C:/Qt/6.10.2/mingw_64/bin/Qt6Qml.dll;C:/Qt/6.10.2/mingw_64/bin/Qt6Network.dll;C:/Qt/6.10.2/mingw_64/bin/Qt6Gui.dll;C:/Qt/6.10.2/mingw_64/bin/Qt6Core.dll;C:/Qt/6.10.2/mingw_64/bin/Qt6Core.dll)

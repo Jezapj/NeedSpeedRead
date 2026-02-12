@@ -1,0 +1,15 @@
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/CMakeFiles/edit_cache.dir
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/CMakeFiles/rebuild_cache.dir
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/core/CMakeFiles/core.dir
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/core/CMakeFiles/edit_cache.dir
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/core/CMakeFiles/rebuild_cache.dir
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/backend/CMakeFiles/backend.dir
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/backend/CMakeFiles/edit_cache.dir
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/backend/CMakeFiles/rebuild_cache.dir
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/CMakeFiles/NeedSpeedRead.dir
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/CMakeFiles/copy_qml.dir
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/CMakeFiles/NeedSpeedRead_qmlimportscan.dir
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/CMakeFiles/edit_cache.dir
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/CMakeFiles/rebuild_cache.dir
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/CMakeFiles/NeedSpeedRead_autogen_timestamp_deps.dir
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/CMakeFiles/NeedSpeedRead_autogen.dir

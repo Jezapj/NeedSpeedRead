@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/DocViewer">
+    <file alias="qmldir">C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/DocViewer/qmldir</file>
+  </qresource>
+</RCC>
+

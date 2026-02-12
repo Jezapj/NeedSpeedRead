@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/DocViewer">C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/DocViewer</file>
+
+  </qresource>
+</RCC>

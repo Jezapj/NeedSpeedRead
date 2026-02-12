@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/cmake_install.cmake",
+		"C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/core/cmake_install.cmake",
+		"C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/backend/cmake_install.cmake",
+		"C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
