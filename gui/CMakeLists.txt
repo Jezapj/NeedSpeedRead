@@ -3,8 +3,13 @@ find_package(Qt6 REQUIRED COMPONENTS Quick Widgets)
 
 qt_standard_project_setup()
 
+if(WIN32)
+    set(EXE_ICON "app.rc")
+endif()
+
 qt_add_executable(NeedSpeedRead
     main.cpp
+    ${EXE_ICON}
 )
 
 # Only embed QML as a module in non-Debug builds
@@ -32,5 +37,9 @@ if (CMAKE_BUILD_TYPE STREQUAL "Debug")
                 $<TARGET_FILE_DIR:NeedSpeedRead>/qml
     )
 endif()
+
+
+
+
 
 

@@ -55,7 +55,7 @@ ApplicationWindow {
                 height: 400
                 font.pixelSize: 120
                 wrapMode: Text.Wrap
-                color: "#000000"
+                color: "#ffffff"
             }
         }
     }

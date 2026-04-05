@@ -252,6 +252,15 @@ build gui/CMakeFiles/NeedSpeedRead.dir/main.cpp.obj: CXX_COMPILER__NeedSpeedRead
   OBJECT_FILE_DIR = gui\CMakeFiles\NeedSpeedRead.dir
   TARGET_SUPPORT_DIR = gui\CMakeFiles\NeedSpeedRead.dir
 
+build gui/CMakeFiles/NeedSpeedRead.dir/app.rc.obj: RC_COMPILER__NeedSpeedRead_unscanned_Debug C$:/Users/jezap/Desktop/Personal/NeedSpeedRead/gui/app.rc || cmake_object_order_depends_target_NeedSpeedRead
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = gui\CMakeFiles\NeedSpeedRead.dir\app.rc.obj.d
+  INCLUDES = -I C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/NeedSpeedRead_autogen/include -I C:/Users/jezap/Desktop/Personal/NeedSpeedRead/backend/include -I C:/Users/jezap/Desktop/Personal/NeedSpeedRead/core/include -I C:/Qt/6.10.2/mingw_64/include/QtCore -I C:/Qt/6.10.2/mingw_64/include -I C:/Qt/6.10.2/mingw_64/mkspecs/win32-g++ -I C:/Qt/6.10.2/mingw_64/include/QtQuick -I C:/Qt/6.10.2/mingw_64/include/QtGui -I C:/Qt/6.10.2/mingw_64/include/QtQml -I C:/Qt/6.10.2/mingw_64/include/QtQmlIntegration -I C:/Qt/6.10.2/mingw_64/include/QtNetwork -I C:/Qt/6.10.2/mingw_64/include/QtOpenGL -I C:/Qt/6.10.2/mingw_64/include/QtWidgets
+  OBJECT_DIR = gui\CMakeFiles\NeedSpeedRead.dir
+  OBJECT_FILE_DIR = gui\CMakeFiles\NeedSpeedRead.dir
+  TARGET_SUPPORT_DIR = gui\CMakeFiles\NeedSpeedRead.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target NeedSpeedRead
@@ -260,7 +269,7 @@ build gui/CMakeFiles/NeedSpeedRead.dir/main.cpp.obj: CXX_COMPILER__NeedSpeedRead
 #############################################
 # Link the executable gui\NeedSpeedRead.exe
 
-build gui/NeedSpeedRead.exe: CXX_EXECUTABLE_LINKER__NeedSpeedRead_Debug gui/CMakeFiles/NeedSpeedRead.dir/NeedSpeedRead_autogen/mocs_compilation.cpp.obj gui/CMakeFiles/NeedSpeedRead.dir/main.cpp.obj | C$:/Qt/6.10.2/mingw_64/lib/libQt6Quick.a backend/libbackend.a C$:/Qt/6.10.2/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Qml.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Network.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Core.a core/libcore.a || backend/libbackend.a core/copy_xpdf_tools core/libcore.a gui/NeedSpeedRead_autogen gui/NeedSpeedRead_autogen_timestamp_deps gui/NeedSpeedRead_qmlimportscan
+build gui/NeedSpeedRead.exe: CXX_EXECUTABLE_LINKER__NeedSpeedRead_Debug gui/CMakeFiles/NeedSpeedRead.dir/NeedSpeedRead_autogen/mocs_compilation.cpp.obj gui/CMakeFiles/NeedSpeedRead.dir/main.cpp.obj gui/CMakeFiles/NeedSpeedRead.dir/app.rc.obj | C$:/Qt/6.10.2/mingw_64/lib/libQt6Quick.a backend/libbackend.a C$:/Qt/6.10.2/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Qml.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Network.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Core.a core/libcore.a || backend/libbackend.a core/copy_xpdf_tools core/libcore.a gui/NeedSpeedRead_autogen gui/NeedSpeedRead_autogen_timestamp_deps gui/NeedSpeedRead_qmlimportscan
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = C:/Qt/6.10.2/mingw_64/lib/libQt6Quick.a  backend/libbackend.a  C:/Qt/6.10.2/mingw_64/lib/libQt6OpenGL.a  -luser32  C:/Qt/6.10.2/mingw_64/lib/libQt6Qml.a  C:/Qt/6.10.2/mingw_64/lib/libQt6Network.a  -lws2_32  -lshell32  C:/Qt/6.10.2/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a  C:/Qt/6.10.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ld3d12  core/libcore.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
