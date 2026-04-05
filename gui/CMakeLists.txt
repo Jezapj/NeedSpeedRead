@@ -1,3 +1,4 @@
+set(QT_FEATURE_vulkan OFF)
 find_package(Qt6 REQUIRED COMPONENTS Quick Widgets)
 
 qt_standard_project_setup()
@@ -31,3 +32,5 @@ if (CMAKE_BUILD_TYPE STREQUAL "Debug")
                 $<TARGET_FILE_DIR:NeedSpeedRead>/qml
     )
 endif()
+
+

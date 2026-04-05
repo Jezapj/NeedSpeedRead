@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: doc_viewer
+# Project: NeedSpeedRead
 # Configurations: Debug
 # =============================================================================
 
@@ -116,6 +116,12 @@ build core/libcore.a: CXX_STATIC_LIBRARY_LINKER__core_Debug core/CMakeFiles/core
 
 
 #############################################
+# Utility command for copy_xpdf_tools
+
+build core/copy_xpdf_tools: phony core/CMakeFiles/copy_xpdf_tools
+
+
+#############################################
 # Utility command for edit_cache
 
 build core/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -138,6 +144,14 @@ build core/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build core/rebuild_cache: phony core/CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Custom command for core\CMakeFiles\copy_xpdf_tools
+
+build core/CMakeFiles/copy_xpdf_tools | ${cmake_ninja_workdir}core/CMakeFiles/copy_xpdf_tools: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jezap\Desktop\Personal\NeedSpeedRead\build\core && "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/jezap/Desktop/Personal/NeedSpeedRead/core/bin_external/xpdf C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/xpdf_tools"
+  DESC = Copying Xpdf binaries to build directory for standalone use
+
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # C:/Users/jezap/Desktop/Personal/NeedSpeedRead/CMakeLists.txt
@@ -154,10 +168,10 @@ build cmake_object_order_depends_target_backend: phony || cmake_object_order_dep
 
 build backend/CMakeFiles/backend.dir/src/document_controller.cpp.obj: CXX_COMPILER__backend_unscanned_Debug C$:/Users/jezap/Desktop/Personal/NeedSpeedRead/backend/src/document_controller.cpp || cmake_object_order_depends_target_backend
   CONFIG = Debug
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = backend\CMakeFiles\backend.dir\src\document_controller.cpp.obj.d
   FLAGS = -g -std=c++20
-  INCLUDES = -IC:/Users/jezap/Desktop/Personal/NeedSpeedRead/backend/include -IC:/Users/jezap/Desktop/Personal/NeedSpeedRead/core/include -isystem C:/Qt/6.10.2/mingw_64/include/QtCore -isystem C:/Qt/6.10.2/mingw_64/include -isystem C:/Qt/6.10.2/mingw_64/mkspecs/win32-g++
+  INCLUDES = -IC:/Users/jezap/Desktop/Personal/NeedSpeedRead/backend/include -IC:/Users/jezap/Desktop/Personal/NeedSpeedRead/core/include -isystem C:/Qt/6.10.2/mingw_64/include/QtCore -isystem C:/Qt/6.10.2/mingw_64/include -isystem C:/Qt/6.10.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.10.2/mingw_64/include/QtWidgets -isystem C:/Qt/6.10.2/mingw_64/include/QtGui
   OBJECT_DIR = backend\CMakeFiles\backend.dir
   OBJECT_FILE_DIR = backend\CMakeFiles\backend.dir\src
   TARGET_SUPPORT_DIR = backend\CMakeFiles\backend.dir
@@ -216,7 +230,7 @@ build backend/rebuild_cache: phony backend/CMakeFiles/rebuild_cache.util
 #############################################
 # Order-only phony target for NeedSpeedRead
 
-build cmake_object_order_depends_target_NeedSpeedRead: phony || cmake_object_order_depends_target_backend cmake_object_order_depends_target_core gui/NeedSpeedRead_autogen gui/NeedSpeedRead_autogen/mocs_compilation.cpp gui/NeedSpeedRead_autogen/timestamp gui/NeedSpeedRead_autogen_timestamp_deps gui/NeedSpeedRead_qmlimportscan
+build cmake_object_order_depends_target_NeedSpeedRead: phony || cmake_object_order_depends_target_backend cmake_object_order_depends_target_core core/copy_xpdf_tools gui/NeedSpeedRead_autogen gui/NeedSpeedRead_autogen/mocs_compilation.cpp gui/NeedSpeedRead_autogen/timestamp gui/NeedSpeedRead_autogen_timestamp_deps gui/NeedSpeedRead_qmlimportscan
 
 build gui/CMakeFiles/NeedSpeedRead.dir/NeedSpeedRead_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__NeedSpeedRead_unscanned_Debug C$:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/NeedSpeedRead_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_NeedSpeedRead
   CONFIG = Debug
@@ -246,10 +260,10 @@ build gui/CMakeFiles/NeedSpeedRead.dir/main.cpp.obj: CXX_COMPILER__NeedSpeedRead
 #############################################
 # Link the executable gui\NeedSpeedRead.exe
 
-build gui/NeedSpeedRead.exe: CXX_EXECUTABLE_LINKER__NeedSpeedRead_Debug gui/CMakeFiles/NeedSpeedRead.dir/NeedSpeedRead_autogen/mocs_compilation.cpp.obj gui/CMakeFiles/NeedSpeedRead.dir/main.cpp.obj | C$:/Qt/6.10.2/mingw_64/lib/libQt6Quick.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Widgets.a backend/libbackend.a C$:/Qt/6.10.2/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Qml.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Network.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Core.a core/libcore.a || backend/libbackend.a core/libcore.a gui/NeedSpeedRead_autogen gui/NeedSpeedRead_autogen_timestamp_deps gui/NeedSpeedRead_qmlimportscan
+build gui/NeedSpeedRead.exe: CXX_EXECUTABLE_LINKER__NeedSpeedRead_Debug gui/CMakeFiles/NeedSpeedRead.dir/NeedSpeedRead_autogen/mocs_compilation.cpp.obj gui/CMakeFiles/NeedSpeedRead.dir/main.cpp.obj | C$:/Qt/6.10.2/mingw_64/lib/libQt6Quick.a backend/libbackend.a C$:/Qt/6.10.2/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Qml.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Network.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.10.2/mingw_64/lib/libQt6Core.a core/libcore.a || backend/libbackend.a core/copy_xpdf_tools core/libcore.a gui/NeedSpeedRead_autogen gui/NeedSpeedRead_autogen_timestamp_deps gui/NeedSpeedRead_qmlimportscan
   CONFIG = Debug
   FLAGS = -g
-  LINK_LIBRARIES = C:/Qt/6.10.2/mingw_64/lib/libQt6Quick.a  C:/Qt/6.10.2/mingw_64/lib/libQt6Widgets.a  backend/libbackend.a  C:/Qt/6.10.2/mingw_64/lib/libQt6OpenGL.a  -luser32  C:/Qt/6.10.2/mingw_64/lib/libQt6Qml.a  C:/Qt/6.10.2/mingw_64/lib/libQt6Network.a  -lws2_32  -lshell32  C:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a  C:/Qt/6.10.2/mingw_64/lib/libQt6Core.a  -ld3d11  -ldxgi  -ldxguid  -ld3d12  C:/Qt/6.10.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  core/libcore.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = C:/Qt/6.10.2/mingw_64/lib/libQt6Quick.a  backend/libbackend.a  C:/Qt/6.10.2/mingw_64/lib/libQt6OpenGL.a  -luser32  C:/Qt/6.10.2/mingw_64/lib/libQt6Qml.a  C:/Qt/6.10.2/mingw_64/lib/libQt6Network.a  -lws2_32  -lshell32  C:/Qt/6.10.2/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.10.2/mingw_64/lib/libQt6Gui.a  C:/Qt/6.10.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ld3d12  core/libcore.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = gui\CMakeFiles\NeedSpeedRead.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -298,7 +312,7 @@ build gui/rebuild_cache: phony gui/CMakeFiles/rebuild_cache.util
 #############################################
 # Utility command for NeedSpeedRead_autogen_timestamp_deps
 
-build gui/NeedSpeedRead_autogen_timestamp_deps: phony backend/libbackend.a gui/NeedSpeedRead_qmlimportscan
+build gui/NeedSpeedRead_autogen_timestamp_deps: phony backend/libbackend.a core/copy_xpdf_tools gui/NeedSpeedRead_qmlimportscan
 
 
 #############################################
@@ -310,7 +324,7 @@ build gui/NeedSpeedRead_autogen: phony gui/CMakeFiles/NeedSpeedRead_autogen gui/
 #############################################
 # Custom command for gui\NeedSpeedRead_autogen\timestamp
 
-build gui/NeedSpeedRead_autogen/timestamp gui/NeedSpeedRead_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}gui/NeedSpeedRead_autogen/timestamp ${cmake_ninja_workdir}gui/NeedSpeedRead_autogen/mocs_compilation.cpp: CUSTOM_COMMAND C$:/Qt/6.10.2/mingw_64/bin/moc.exe C$:/Qt/6.10.2/mingw_64/bin/uic.exe || backend/libbackend.a core/libcore.a gui/NeedSpeedRead_autogen_timestamp_deps gui/NeedSpeedRead_qmlimportscan
+build gui/NeedSpeedRead_autogen/timestamp gui/NeedSpeedRead_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}gui/NeedSpeedRead_autogen/timestamp ${cmake_ninja_workdir}gui/NeedSpeedRead_autogen/mocs_compilation.cpp: CUSTOM_COMMAND C$:/Qt/6.10.2/mingw_64/bin/moc.exe C$:/Qt/6.10.2/mingw_64/bin/uic.exe || backend/libbackend.a core/copy_xpdf_tools core/libcore.a gui/NeedSpeedRead_autogen_timestamp_deps gui/NeedSpeedRead_qmlimportscan
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jezap\Desktop\Personal\NeedSpeedRead\build\gui && "C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/CMakeFiles/NeedSpeedRead_autogen.dir/AutogenInfo.json Debug && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/NeedSpeedRead_autogen/timestamp && "C:\Program Files\CMake\bin\cmake.exe" -E cmake_transform_depfile Ninja gccdepfile C:/Users/jezap/Desktop/Personal/NeedSpeedRead C:/Users/jezap/Desktop/Personal/NeedSpeedRead/gui C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/NeedSpeedRead_autogen/deps C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/CMakeFiles/d/733d874646f412b7b6d467276ceb4a411c9dc4c339b7d8fc669e80e0f53fd896.d"
   DESC = Automatic MOC and UIC for target NeedSpeedRead
   depfile = CMakeFiles\d\733d874646f412b7b6d467276ceb4a411c9dc4c339b7d8fc669e80e0f53fd896.d
@@ -343,7 +357,7 @@ build gui/.qt/qml_imports/NeedSpeedRead_build.cmake | ${cmake_ninja_workdir}gui/
 #############################################
 # Phony custom command for gui\CMakeFiles\NeedSpeedRead_autogen
 
-build gui/CMakeFiles/NeedSpeedRead_autogen | ${cmake_ninja_workdir}gui/CMakeFiles/NeedSpeedRead_autogen: phony gui/NeedSpeedRead_autogen/timestamp || backend/libbackend.a core/libcore.a gui/NeedSpeedRead_autogen_timestamp_deps gui/NeedSpeedRead_qmlimportscan
+build gui/CMakeFiles/NeedSpeedRead_autogen | ${cmake_ninja_workdir}gui/CMakeFiles/NeedSpeedRead_autogen: phony gui/NeedSpeedRead_autogen/timestamp || backend/libbackend.a core/copy_xpdf_tools core/libcore.a gui/NeedSpeedRead_autogen_timestamp_deps gui/NeedSpeedRead_qmlimportscan
 
 # =============================================================================
 # Target aliases.
@@ -361,6 +375,8 @@ build NeedSpeedRead_qmlimportscan: phony gui/NeedSpeedRead_qmlimportscan
 build backend: phony backend/libbackend.a
 
 build copy_qml: phony gui/copy_qml
+
+build copy_xpdf_tools: phony core/copy_xpdf_tools
 
 build core: phony core/libcore.a
 
@@ -390,7 +406,7 @@ build backend/all: phony backend/libbackend.a
 #############################################
 # Folder: C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/core
 
-build core/all: phony core/libcore.a
+build core/all: phony core/libcore.a core/copy_xpdf_tools
 
 # =============================================================================
 

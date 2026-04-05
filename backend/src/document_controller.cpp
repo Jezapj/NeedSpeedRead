@@ -66,6 +66,24 @@ void DocumentController::displayContentStaggered(const QString& fullContent)
     }
 }
 
+void DocumentController::selectFile() {
+    // Opens the native Windows File Explorer dialog
+    QString fileName = QFileDialog::getOpenFileName(
+        nullptr,
+        tr("Open PDF"),
+        "", 
+        tr("PDF Files (*.pdf);;All Files (*)")
+    );
+
+    if (!fileName.isEmpty()) {
+        m_currentPath = fileName;
+        emit currentPathChanged();
+        
+        // Automatically start processing the file
+        openFile(fileName);
+    }
+}
+
 QString DocumentController::title() const {
     return m_title;
 }

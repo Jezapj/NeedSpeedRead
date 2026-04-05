@@ -42,10 +42,13 @@ template <> constexpr inline auto backend::DocumentController::qt_create_metaobj
         "documentChanged",
         "",
         "contentChanged",
+        "currentPathChanged",
         "openFile",
         "path",
+        "selectFile",
         "title",
-        "content"
+        "content",
+        "currentPath"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -53,16 +56,22 @@ template <> constexpr inline auto backend::DocumentController::qt_create_metaobj
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'contentChanged'
         QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'currentPathChanged'
+        QtMocHelpers::SignalData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'openFile'
-        QtMocHelpers::MethodData<void(const QString &)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 5 },
+        QtMocHelpers::MethodData<void(const QString &)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 6 },
         }}),
+        // Method 'selectFile'
+        QtMocHelpers::MethodData<void()>(7, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'title'
-        QtMocHelpers::PropertyData<QString>(6, QMetaType::QString, QMC::DefaultPropertyFlags, 0),
+        QtMocHelpers::PropertyData<QString>(8, QMetaType::QString, QMC::DefaultPropertyFlags, 0),
         // property 'content'
-        QtMocHelpers::PropertyData<QString>(7, QMetaType::QString, QMC::DefaultPropertyFlags, 1),
+        QtMocHelpers::PropertyData<QString>(9, QMetaType::QString, QMC::DefaultPropertyFlags, 1),
+        // property 'currentPath'
+        QtMocHelpers::PropertyData<QString>(10, QMetaType::QString, QMC::DefaultPropertyFlags, 2),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -86,7 +95,9 @@ void backend::DocumentController::qt_static_metacall(QObject *_o, QMetaObject::C
         switch (_id) {
         case 0: _t->documentChanged(); break;
         case 1: _t->contentChanged(); break;
-        case 2: _t->openFile((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 2: _t->currentPathChanged(); break;
+        case 3: _t->openFile((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 4: _t->selectFile(); break;
         default: ;
         }
     }
@@ -95,12 +106,15 @@ void backend::DocumentController::qt_static_metacall(QObject *_o, QMetaObject::C
             return;
         if (QtMocHelpers::indexOfMethod<void (DocumentController::*)()>(_a, &DocumentController::contentChanged, 1))
             return;
+        if (QtMocHelpers::indexOfMethod<void (DocumentController::*)()>(_a, &DocumentController::currentPathChanged, 2))
+            return;
     }
     if (_c == QMetaObject::ReadProperty) {
         void *_v = _a[0];
         switch (_id) {
         case 0: *reinterpret_cast<QString*>(_v) = _t->title(); break;
         case 1: *reinterpret_cast<QString*>(_v) = _t->content(); break;
+        case 2: *reinterpret_cast<QString*>(_v) = _t->currentPath(); break;
         default: break;
         }
     }
@@ -125,20 +139,20 @@ int backend::DocumentController::qt_metacall(QMetaObject::Call _c, int _id, void
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 5;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 5;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }
@@ -153,5 +167,11 @@ void backend::DocumentController::documentChanged()
 void backend::DocumentController::contentChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+}
+
+// SIGNAL 2
+void backend::DocumentController::currentPathChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
 }
 QT_WARNING_POP

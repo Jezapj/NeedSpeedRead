@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Controls.Material
 
+
 ApplicationWindow {
     Material.theme: Material.Dark
     Material.accent: Material.Indigo
@@ -27,20 +28,18 @@ ApplicationWindow {
             width: parent.width - 24
 
             TextField {
-                id: filePathField
-                placeholderText: "Enter file path..."
-                width: parent.width - openButton.width - 8
-                color: "#ffffff"
-            }
+            id: filePathField
+            text: controller.currentPath // Automatically updates when picked
+            placeholderText: "No file selected..."
+            readOnly: true
+            width: parent.width - openButton.width - 8
+            color: "#ffffff"
+        }
 
             Button {
                 id: openButton
-                text: "Open File"
-                onClicked: {
-                    if (filePathField.text.length > 0) {
-                        controller.openFile(filePathField.text)
-                    }
-                }
+                text: "Select File"
+                onClicked: controller.selectFile() // Calls the C++ dialog
             }
         }
 

@@ -17,5 +17,6 @@ target_include_directories(backend
 target_link_libraries(backend
     PUBLIC
         Qt6::Core
+        Qt6::Widgets
         core
 )

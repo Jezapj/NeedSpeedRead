@@ -1,6 +1,7 @@
 C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/CMakeFiles/edit_cache.dir
 C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/CMakeFiles/rebuild_cache.dir
 C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/core/CMakeFiles/core.dir
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/core/CMakeFiles/copy_xpdf_tools.dir
 C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/core/CMakeFiles/edit_cache.dir
 C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/core/CMakeFiles/rebuild_cache.dir
 C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/backend/CMakeFiles/backend.dir
