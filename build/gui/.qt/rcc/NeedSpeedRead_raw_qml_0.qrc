@@ -1,5 +1,5 @@
 <RCC>
-  <qresource prefix="/DocViewer/">
+  <qresource prefix="/NeedSpeedRead/">
     <file alias="qml/Main.qml">C:/Users/jezap/Desktop/Personal/NeedSpeedRead/gui/qml/Main.qml</file>
   </qresource>
 </RCC>

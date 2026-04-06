@@ -14,11 +14,11 @@
 #else
 #define Q_QMLTYPE_EXPORT
 #endif
-Q_QMLTYPE_EXPORT void qml_register_types_DocViewer()
+Q_QMLTYPE_EXPORT void qml_register_types_NeedSpeedRead()
 {
     QT_WARNING_PUSH QT_WARNING_DISABLE_DEPRECATED
     QT_WARNING_POP
-    qmlRegisterModule("DocViewer", 1, 0);
+    qmlRegisterModule("NeedSpeedRead", 1, 0);
 }
 
-static const QQmlModuleRegistration docViewerRegistration("DocViewer", qml_register_types_DocViewer);
+static const QQmlModuleRegistration needSpeedReadRegistration("NeedSpeedRead", qml_register_types_NeedSpeedRead);

@@ -8,9 +8,9 @@
                         {
                             "codegenResult": 0,
                             "column": 21,
-                            "durationMicroseconds": 0,
+                            "durationMicroseconds": 2000,
                             "functionName": "theme",
-                            "line": 6,
+                            "line": 7,
                             "message": ""
                         },
                         {
@@ -18,7 +18,7 @@
                             "column": 22,
                             "durationMicroseconds": 0,
                             "functionName": "accent",
-                            "line": 7,
+                            "line": 8,
                             "message": ""
                         },
                         {
@@ -26,7 +26,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 15,
+                            "line": 16,
                             "message": ""
                         },
                         {
@@ -34,15 +34,7 @@
                             "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 20,
-                            "message": "Cannot access value for name controller"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 24,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 27,
+                            "line": 21,
                             "message": "Cannot access value for name controller"
                         },
                         {
@@ -50,7 +42,39 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 33,
+                            "line": 28,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 19,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 32,
+                            "message": "Cannot access value for name controller"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 35,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 42,
+                            "message": "Cannot access value for name controller"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 47,
                             "message": ""
                         },
                         {
@@ -58,7 +82,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 34,
+                            "line": 48,
                             "message": ""
                         },
                         {
@@ -66,7 +90,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 40,
+                            "line": 54,
                             "message": "Cannot access value for name controller"
                         },
                         {
@@ -74,7 +98,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "wrapMode",
-                            "line": 41,
+                            "line": 57,
                             "message": ""
                         },
                         {
@@ -82,14 +106,14 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 39,
+                            "line": 53,
                             "message": ""
                         }
                     ],
                     "filePath": "C:/Users/jezap/Desktop/Personal/NeedSpeedRead/gui/qml/Main.qml"
                 }
             ],
-            "moduleId": "DocViewer(NeedSpeedRead)"
+            "moduleId": "NeedSpeedRead(NeedSpeedRead)"
         }
     ]
 }

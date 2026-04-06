@@ -2,13 +2,13 @@
 -I
 C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui
 -I
-C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/DocViewer
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/NeedSpeedRead
 -I
 C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui
 -I
 C:/Qt/6.10.2/mingw_64/qml
 --resource
-C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/.qt/rcc/qmake_DocViewer.qrc
+C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/.qt/rcc/qmake_NeedSpeedRead.qrc
 --resource
 C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/.qt/rcc/NeedSpeedRead_raw_qml_0.qrc
 C:/Users/jezap/Desktop/Personal/NeedSpeedRead/gui/qml/Main.qml

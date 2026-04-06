@@ -5,7 +5,7 @@
 #include <QtCore/qstring.h>
 
 namespace QmlCacheGeneratedCode {
-namespace _0x5f_DocViewer_qml_Main_qml { 
+namespace _0x5f_NeedSpeedRead_qml_Main_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -26,7 +26,7 @@ Q_GLOBAL_STATIC(Registry, unitRegistry)
 
 
 Registry::Registry() {
-    resourcePathToCachedUnit.insert(QStringLiteral("/DocViewer/qml/Main.qml"), &QmlCacheGeneratedCode::_0x5f_DocViewer_qml_Main_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/NeedSpeedRead/qml/Main.qml"), &QmlCacheGeneratedCode::_0x5f_NeedSpeedRead_qml_Main_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

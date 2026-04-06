@@ -34,9 +34,19 @@ Document Parser::parse(const fs::path& path) {
 
     fs::path xpdfPath = exeDir / "core" / "bin_external" / "xpdf" / "pdftotext.exe";
 
+
     if (!fs::exists(xpdfPath)) {
+    fs::path xpdfPath2 = fs::current_path() / "xpdf_tools" / "pdftotext.exe";
+
+    if (fs::exists(xpdfPath2)) {
+        std::cerr << "Warning: pdftotext not found in expected location. Using fallback: " 
+                  << xpdfPath2 << std::endl;
+        xpdfPath = xpdfPath2; // ← Actually update xpdfPath so CreateProcess uses it
+    } else {
         throw std::runtime_error("pdftotext not found at: " + xpdfPath.string());
+        }
     }
+// Now xpdfPath is valid in both the primary and fallback case
 
     // Unique temp file
     fs::path outputPath = fs::temp_directory_path() / fs::path("parsed-%%%%%%.txt");
@@ -50,22 +60,28 @@ Document Parser::parse(const fs::path& path) {
     std::vector<char> cmdBuffer(cmd.begin(), cmd.end());
     cmdBuffer.push_back('\0');  // null-terminate
 
-    STARTUPINFOA si{};
-    PROCESS_INFORMATION pi{};
-    si.cb = sizeof(si);
 
     // Set working directory to where the exe is (fixes DLL issues)
     std::string workingDir = xpdfPath.parent_path().string();
 
+    STARTUPINFOA si{};
+    PROCESS_INFORMATION pi{};
+    si.cb = sizeof(si);
+    si.dwFlags = STARTF_USESHOWWINDOW | STARTF_USESTDHANDLES;  // ← add STARTF_USESTDHANDLES
+    si.wShowWindow = SW_HIDE;
+    si.hStdInput  = NULL;
+    si.hStdOutput = NULL;
+    si.hStdError  = NULL;
+    
     BOOL success = CreateProcessA(
-        NULL,                   // application name (use command line instead)
-        cmdBuffer.data(),       // command line (mutable!)
-        NULL,                   // process security
-        NULL,                   // thread security
-        FALSE,                  // inherit handles
-        0,                      // flags
-        NULL,                   // environment
-        workingDir.c_str(),     // working directory 🔥 IMPORTANT
+        NULL,
+        cmdBuffer.data(),
+        NULL,
+        NULL,
+        FALSE,
+        CREATE_NO_WINDOW | DETACHED_PROCESS,  // ← add DETACHED_PROCESS
+        NULL,
+        workingDir.c_str(),
         &si,
         &pi
     );
