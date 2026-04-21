@@ -6,9 +6,4 @@ C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/.qt/qml_imports/NeedSpee
 -importPath
 C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui
 -importPath
-C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/NeedSpeedRead
--importPath
 C:/Qt/6.10.2/mingw_64/qml
--qrcFiles
-C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/.qt/rcc/qmake_NeedSpeedRead.qrc
-C:/Users/jezap/Desktop/Personal/NeedSpeedRead/build/gui/.qt/rcc/NeedSpeedRead_raw_qml_0.qrc
